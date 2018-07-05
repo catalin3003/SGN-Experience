@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html manifest="sgn_m.hyperesources/cache.manifest">
+  <head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="chrome=1,IE=edge" />
+	<title>SGN Experience</title>
+	<style>
+		html {
+			height:100%;
+		}
+		body {
+			background-color:#002248;
+			margin:0;
+			height:100%;
+		}
+	</style>
+	<!-- copy these lines to your document head: -->
+
+	<meta name="viewport" content="user-scalable=yes, width=1080" />
+	<style>
+@font-face {
+	font-family: 'Gotham Rounded';
+	src: url('sgn_m.hyperesources/GothamRounded-Book.eot');
+	src: url('sgn_m.hyperesources/GothamRounded-Book.eot?#iefix') format('embedded-opentype'),
+		url('sgn_m.hyperesources/GothamRounded-Book.woff') format('woff'),
+		url('sgn_m.hyperesources/GothamRounded-Book.ttf') format('truetype'),
+		url('sgn_m.hyperesources/GothamRounded-Book.svg#GothamRounded-Book') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Gotham Rounded';
+	src: url('sgn_m.hyperesources/GothamRounded-Bold.eot');
+	src: url('sgn_m.hyperesources/GothamRounded-Bold.eot?#iefix') format('embedded-opentype'),
+		url('sgn_m.hyperesources/GothamRounded-Bold.woff') format('woff'),
+		url('sgn_m.hyperesources/GothamRounded-Bold.ttf') format('truetype'),
+		url('sgn_m.hyperesources/GothamRounded-Bold.svg#GothamRounded-Bold') format('svg');
+	font-weight: bold;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Gotham Rounded';
+	src: url('sgn_m.hyperesources/GothamRounded-Medium.eot');
+	src: url('sgn_m.hyperesources/GothamRounded-Medium.eot?#iefix') format('embedded-opentype'),
+		url('sgn_m.hyperesources/GothamRounded-Medium.woff') format('woff'),
+		url('sgn_m.hyperesources/GothamRounded-Medium.ttf') format('truetype'),
+		url('sgn_m.hyperesources/GothamRounded-Medium.svg#GothamRounded-Medium') format('svg');
+	font-weight: 500;
+	font-style: normal;
+}
+</style>
+	<script type="text/javascript" src="sgn_m.hyperesources/jquery-2.1.4.min.js"></script>
+<link type="text/plain" rel="author" href="sgn_m.hyperesources/humans.txt" />
+<link type="text/plain" rel="author" href="humans.txt" />
+<script type="text/javascript">
+
+  function myCallback(hypeDocument, element, event) {
+    if (isScalePossible()){
+      window.myHypeContainerId = hypeDocument.documentId();
+      $('#' + window.myHypeContainerId).css({
+        '-moz-transform-origin': '0% 0%',
+        '-webkit-transform-origin': '0% 0%',
+        '-ms-transform-origin': '0% 0%',
+        '-o-transform-origin': '0% 0%',
+        'transform-origin': '0% 0%',
+        margin: 0
+      });
+
+      scaleSite();
+      $(window).resize(scaleSite);
+    }
+    return true;
+  }
+
+if("HYPE_eventListeners" in window === false) {
+    window.HYPE_eventListeners = Array();
+  }
+  window.HYPE_eventListeners.push({"type":"HypeDocumentLoad", "callback":myCallback});
+
+  function scaleSite()
+  {
+  	var hypeContainer = $('#' + window.myHypeContainerId);
+    var containerWidth = hypeContainer.width();
+    var containerHeight = hypeContainer.height();
+    var parentWidth = hypeContainer.parent().width();
+    var parentHeight = hypeContainer.parent().height();
+    var scaleWidth = parentWidth / containerWidth;
+    var scaleHeight = parentHeight / containerHeight;
+    //var scale = Math.min(scaleWidth, scaleHeight);
+    var scale = scaleWidth;
+    //var scale = scaleHeight;
+    var left = (containerWidth * scale < parentWidth) ? ((parentWidth - (containerWidth * scale)) / 2) + 'px' : '0px';
+    var top = (containerHeight * scale < parentHeight) ? ((parentHeight - (containerHeight * scale)) / 2) + 'px' : '0px' ;
+    hypeContainer.css({
+        "-moz-transform"    : "scale("+scale+")",
+        "-webkit-transform" : "scale("+scale+")",
+        "-ms-transform"     : "scale("+scale+")",
+        "-o-transform"      : "scale("+scale+")",
+        "transform"         : "scale("+scale+")",
+        "left" : left,
+        "top" : top
+    });
+  }
+
+  function isScalePossible() 
+  {
+    can = 'MozTransform' in document.body.style;
+    if(!can) can = 'webkitTransform' in document.body.style;
+    if(!can) can = 'msTransform' in document.body.style;
+    if(!can) can = 'OTransform' in document.body.style;
+    if(!can) can = 'transform' in document.body.style;
+    if(!can) can = 'Transform' in document.body.style;
+    return can;
+  }
+
+</script>
+
+	<!-- end copy -->
+  </head>
+  <body>
+	<!-- copy these lines to your document: -->
+
+	<div id="sgnm_hype_container" style="margin:auto;position:relative;width:1080px;height:3000px;overflow:hidden;">
+		<script type="text/javascript" charset="utf-8" src="sgn_m.hyperesources/sgnm_hype_generated_script.js?65"></script>
+	</div>
+
+	<!-- end copy -->
+	
+
+
+	<!-- text content for search engines: -->
+
+	<div style="display:none" aria-hidden=true>
+
+		<div>Frank Norman
+
+Safety is a priority in everything we do here at SGN and Frank, the winner of the Safety First award, personifies this. He was nominated by General Manager Graham Cox who said: “Frank’s local knowledge and quick thinking helped contractors avoid what could have been a serious incident while he was out working earlier this year. It was a great example of ‘not walking by’.” Frank was driving past some contractors who were conducting a directional drilling operation. Frank knew there was a high pressure main near the spot they were about to drill. He instructed the contractors to stop work and reported the incident to the Engineering Manager and the Plant Protection Officer. The site was then visited by both who worked with the contractors to establish minimum separation zones and agree safe systems of work.</div>
+		<div>Frank Norman was over the moon when he received the Safety First award.</div>
+		<div>Driving performance</div>
+		<div></div>
+		<div>Outstanding People Awards (OPAs)</div>
+		<div>Chris Holford from Poole depot was our Shining Star.</div>
+		<div>READ MORE</div>
+		<div>CLOSE</div>
+		<div>Raising awareness about carbon monoxide is one of the ways we look after customers.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+		<div>Keyhole</div>
+		<div>Immersion tube preheater</div>
+		<div>Scott Robinson applied to Into Action when he raised almost £1,500 for Alzheimer Scotland by cycling 100 miles in memory of his grandmother.</div>
+		<div>Shooting Star Award at the Utility Week Stars Awards 2017
+Hannah Brett (Communications Manager)
+</div>
+		<div>Fifteen determined colleagues from our Dumfries satellite depot created pathways for wheelchair access in Eskrigg Nature Reserve in Lockerbie.</div>
+		<div>Into Action
+We give up to £50,000 each year by matching our employees’ charity fundraising endeavours up to £500, or by supplying kit for kids in local communities.</div>
+		<div>IGEM Gas Industry Awards:
+Innovation Project Award</div>
+		<div>UK IT Industry Awards 2017
+IT team and Customer Experience team collecting the Cyber Security Project of the Year Award
+</div>
+		<div>CAP
+Our Community Action Programme (CAP) offers everyone one day a year to help out in their local community</div>
+		<div>10 years anniversary</div>
+		<div>Project Horizon
+We’re looking beyond 2021 to help us boost customer service, minimise our environmental impact and meet the changing needs of our network, while keeping costs down for our customers.</div>
+		<div>Safety first >
+</div>
+		<div>Putting people at the heart >
+</div>
+		<div>Sustaining our world</div>
+		<div>Proud to bee
+Naturalist Chris Packham launched Proud to bee, our partnership with Lornshill Academy in Alloa. The project aims to educate the Alloa pupils about the plight of the honeybee, and inspire them to help restore bees to the environment.</div>
+		<div>
+Opening up the Gas Market</div>
+		<div>Sustaining our world >
+</div>
+		<div>Pride</div>
+		<div>
+Keyhole</div>
+		<div>
+Real-Time Networks</div>
+		<div>Colin Mitchell and Greg Patrick, Dunfermline
+
+“All of the team were absolutely super and the upset was zero. My husband is disabled and was concerned about access but everything was great and they couldn’t have been more helpful.”</div>
+		<div>
+Immersion tube preheater </div>
+		<div>Aksa Haq-Chaudery from our Finance team was shortlisted for our Unsung Hero award.</div>
+		<div>Opening up the Gas Market
+</div>
+		<div>VIEW IMAGES</div>
+		<div>Version and Build: 1.2.2 (2M)</div>
+		<div>Chris Rymer and Matt Burt (centre) took home the Customer Experience award after receiving 36 10/10 scorecards from customers.</div>
+		<div>WATCH VIDEO</div>
+		<div>Andrea Emmerson was presented the Smart Thinker award by CFO Chris Brook (right).</div>
+		<div>Kevin Hilson received the Unsung Hero award.</div>
+		<div>Reduced carbon emissions
+• Reduce carbon emissions
+   from business travel by 10%</div>
+		<div>Increase energy efficiency
+• Reduce energy consumption
+   in offices and depots by 10%
+• Reduce energy consumption
+   at operational sites by 10%
+</div>
+		<div>Increase resource efficiency
+• Reduce the use of virgin
+   aggregate by 50%
+• Reduce water consumption in
+   offices and depots by 20%
+• Use PE pipe 10% more
+   efficiently
+</div>
+		<div>Eliminate waste to landfill
+• No office and depot waste to
+   landfill by 2021
+• No excavated spoil to landfill
+   by 2021
+</div>
+		<div>Anton Siwicki received the Inspiration Manager award on behalf of Peter Hatton while Michael Foley received the Sustaining our World award on behalf of Diane Jamieson.</div>
+		<div>Gas Industry Awards 
+Maureen McIntosh, Head of Customer Service, collects a Special Recognition Award</div>
+		<div>Here’s a glimpse of our Outstanding People Awards (OPAs) where colleagues are recognised for their contribution to our company with an awards ceremony to celebrate their achievements.</div>
+		<div>Real-Time Networks</div>
+		<div>Looking after customers</div>
+		<div>Discounted gas connections - Helping to Heat more homes
+
+Working with the Royal Voluntary Service
+
+Through our partnership with RVS we aim to also make more people aware of:
+
+• The Priority Service Register where
+   pensioners and other vulnerable people
+   can get extra help and support with
+   their energy supply.
+
+• Discounted gas connections
+
+• Carbon monoxide
+
+• Our locking valve which allows cookers
+   to be turned off and on by carers and
+   family members looking after vulnerable
+   people.
+  
+We’ve now reached a significant milestone of connecting our 10,000th customer in Scotland through our Help to Heat scheme, which supports low income and vulnerable households.</div>
+		<div>Driving
+performance
+</div>
+		<div>Looking after customers >
+</div>
+		<div>Efficiency, innovation and continuous improvement will help us deliver excellence and achieve commercial success.</div>
+		<div>The SGN Way
+We are dedicated to keeping our customers safe and warm by leading the way in energy delivery.</div>
+		<div>Innovation
+Innovation is all about embracing change in order to continually evolve.</div>
+		<div>Looking
+after
+customers
+</div>
+		<div>By listening to our customers, understanding their needs and keeping our promises we can deliver an excellent service 
+that people trust.</div>
+		<div>Awards
+
+</div>
+		<div>Safety first</div>
+		<div>Induction/SGN Way</div>
+		<div>We’re providing a 10/10 customer service
+</div>
+		<div>Ignite
+Ignite is our suggestion scheme encouraging innovation and continuous improvement across the business</div>
+		<div>Our Operations Control Centre (OCC) received the Team of the Year award.</div>
+		<div>Barrie and Dawn Gillam (left) took home our CAP month trophy for their CAP project at Howletts Wild Animal Park near Canterbury. Colleagues from our Horley Head Office and West Kent depot visited the park to paint fences in the seven-acre elephant enclosure.</div>
+		<div>RIIO
+RIIO is Ofgem’s performance based model designed to encourage network companies to:
+
+• Engage stakeholders in the
+   decision-making process
+
+• Invest efficiently for continued safe and
+   reliable services
+
+• Innovate to improve operations and
+   reduce network costs
+
+• Work towards a low carbon economy
+   and wider environmental improvements
+
+• Revenue = Incentives + Innovation +
+   Outputs</div>
+		<div>People</div>
+		<div>Purpose</div>
+		<div>Alex Fassam, Horley
+
+“Alex deserves 11/10. I can’t praise him highly enough for his efficient & caring service shown in helping my elderly mother arrange to have her gas meter moved.”</div>
+		<div>Greenplan
+Our Greenplan sets out our five goals and nine targets that aim to reduce our environmental impact.</div>
+		<div>Biomethane
+We’re industry leaders in developing green gas, including biomethane. This is part of our long-term strategy to increase the volume of green gas in our network to reduce carbon emissions.
+
+
+
+
+
+
+
+
+
+
+
+
+
+Raw materials are broken down by anaerobic digestion to produce biogas. The biogas is cleaned up and turned into biomethane, which we inject into our network.</div>
+		<div>Stuart Fagg and Ollie Goldwin, East Kent
+
+“They treated me very well through a long and a difficult job. I’m a 70-year-old women living on my own and they went beyond the call of duty to look after my safety. They ensured I was secure, warm and most of all I really appreciated them treating me as an intelligent person.”</div>
+		<div>Sustaining
+our world
+</div>
+		<div>We maximise our effect on local communities and minimise our impact
+on the world.</div>
+		<div>Putting
+people at
+the heart</div>
+		<div>We always work together,  talk honestly, and treat people with respect.</div>
+		<div>Reduce gas emissions
+• Reduce natural gas emissions
+   by 12%</div>
+		<div>Driving performance >
+</div>
+		<div>Safety is at the heart of everything we do. We believe everyone should go home safely at the end of the day.</div>
+		<div>Case study
+OPAs</div>
+		<div>AGSM Gas Safety Awards:
+Tracey McIntyre</div>
+		<div>We take responsibility for our own safety and for the safety of those around us. Our golden safety rules help support this value and shape our behaviours.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Occupational health
+Our field employees undergo health surveillance to ensure their work activities are not affecting their health. We also offer lifestyle screening and flu vaccination to all our employees. Counselling services from EmployeeCare are also available for employees and their family members.
+</div>
+		<div>Outward Bound Trust, Seamab School, Girlguiding UK, Solutions
+SGN for the planet and Royal Voluntary Service</div>
+		<div>Career and development</div>
+		<div>Core behaviours
+We believe our behaviours have the biggest impact on our company culture. They’re what drives the way we work together and what we can achieve.</div>
+		<div>Reward and recognition</div>
+		<div>Our Advanced
+Apprenticeship Programme
+</div>
+		<div>are a great way for
+colleagues to say thank you to each other.</div>
+		<div>Graduate and trainee
+programme
+
+We recruit trainees and graduates who are developed through a two-year programme which includes a mixture of classroom study, on-the-job training, coaching and mentoring.</div>
+		<div>Mark Fisher, Graduate
+“We don’t just spend time in one department during the programme. We get to meet different people and network with colleagues in other areas of the business giving us a better appreciation of how the company works overall.”</div>
+		<div>There are more opportunities than ever to give back to our communities and inspire the next generation. We work with Girlguiding, Outward Bound and Solutions for the Planet helping young people gain valuable life skills, and build their self-motivation, self-esteem and confidence.
+
+Mentoring is a great way to develop leadership and coaching skills, creative thinking and even take on challenges in the great outdoors.</div>
+		<div>TUSSIE PATEL</div>
+		<div>Engagement</div>
+		<div>Diversity and inclusion
+We’re committed to building a more diverse SGN and creating a culture of inclusion where everyone, regardless of difference, is valued.
+
+Women in Engineering
+
+
+
+
+
+
+
+
+
+
+
+
+
+realised this career path was within my reach and was something I’d enjoy. I’ve been to college, as well as doing an IT and telecoms apprenticeship before joining SGN.”
+
+It has not been completely straightforward for Sara but having supportive colleagues has really helped her development. She added: “I’m currently responsible for a few small projects which bring their own challenges. After initially struggling with self-confidence in my new environment, my colleagues, both male and female, have been very supportive and have made me feel comfortable in my role. It’s definitely worth stepping out of your comfort zone to consider a career in engineering.”</div>
+		<div>At SGN we don’t just offer a job for life, we offer a career.
+
+Four years ago, Tussie Patel came to work at SGN through an agency as a temporary finance assistant before moving on to become Business Performance Manager (BPM) for our South Downs replacement depot. Today, she’s back in our Finance team working as Finance Business Partner to our BPMs. Tussie is an advocate for taking your development into your own hands. Here’s her top tips:
+
+Speak up. Let your manager know about your ambitions. Ask for development opportunities. The Training and Development team are fantastic at supporting employees with their training programmes.
+
+Work hard. Set realistic but challenging goals. Take a step outside your comfort zone and ask questions… lots of them! Get over any fears that a question might sound silly.
+
+Get yourself out there! Raise your profile by visiting other depots when the opportunity comes up. Or why not volunteer as a comms champ or social coordinator? You could submit an Ignite idea, or even write a blog to let others know what you do.</div>
+		<div>APPRENTICES</div>
+		<div>Marc Robinson, Trainee
+“Our training covers every aspect of the gas network so we need to arrange placements within other departments ourselves. My advice to other Trainees is don’t be afraid to ask, everyone is so helpful.”</div>
+		<div>TRAINEES</div>
+		<div>Culture</div>
+		<div>Peter How joined our apprenticeship programme in 2008 and is now a Team Manager in our Maintenance team in Scotland. Peter said: “Going through the apprenticeship program was a great opportunity for me to learn a new set of skills and earn money while doing it. SGN has also helped me to create a personal development program so I can continue to learn and advance my career.”
+
+Top 100 apprentice employer 2014/15</div>
+		<div>Awards
+Our SGN Way Awards are a great way for colleagues to say thank you to each other.
+
+Andy Meredith, Operations Control Centre (OCC) Team Manager said, “In OCC it can be a fast-paced job. When a controller has done something outstanding, we like to make sure they’re rewarded.”
+
+Replacement Team Manager, Jim Brown said, “These awards are a great way to show someone you appreciate their efforts.”</div>
+		<div>Benefits</div>
+		<div>MENTORING</div>
+		<div>Case studies</div>
+		<div>Our SGN Way Awards
+on our            website</div>
+		<div>Having your say
+We listen to our employees’ views and involve them in helping us to improve things through, polls, surveys, focus sessions and action planning.
+
+
+
+
+
+
+
+
+
+
+
+
+
+Employee engagement survey
+One of the ways we measure employee engagement is through our annual employee engagement survey. The feedback we get from our colleagues helps us understand what we’re doing well and where we can improve.
+
+Pulse survey
+Our annual Pulse survey gives our colleagues the chance to tell us how we’re doing with communication in SGN. It’s not just about our intranet and magazine, it’s also about how managers communicate with their teams.</div>
+		<div>Reward &
+recognition
+</div>
+		<div>Engagement >
+</div>
+		<div>Your holidays
+
+HolidayPlus is a scheme which allows you to buy additional holidays to add to your existing holiday entitlement. Not only will you benefit from extra holidays, you will pay less tax and National Insurance as HolidayPlus is deducted from your gross salary.</div>
+		<div>As an apprentice, you’ll be joining an externally accredited programme to gain the knowledge and practical skills for a craftsperson role in SGN.
+
+The Advanced Apprenticeship lasts three or four years. All apprenticeships include classroom and workshop training, supported by time on site gaining operational experience with our skilled engineers. Over three years you will spend up to 60 weeks in training.
+
+Training with us is more than teaching you how to use a spanner. Our recruits participate in a variety of courses to develop their confidence and skills to get the most out of their work.
+</div>
+		<div>Culture >
+</div>
+		<div>Your travel
+
+Our Justdrive salary sacrifice scheme is a
+no-fuss competitive car leasing scheme which comes with the following benefits:
+
+• No MOT or service costs
+• No credit checks or deposits
+• The cost is deducted from your
+   gross salary so you’ll get tax
+   and National Insurance savings
+• Fully comprehensive insurance
+• Completely covered for
+   maintenance and tyres
+• Breakdown recovery and
+   accident management
+• Road tax is included for the
+   duration of the  contract.
+</div>
+		<div>Tussie Patel
+</div>
+		<div>We believe our behaviours have the biggest impact on our company culture.</div>
+		<div>Benefits >
+</div>
+		<div>Your pension
+
+We provide a Group Personal Pension Plan (GPPP) for which we contribute more than three times what you put in. It’s also a tax-efficient way of building up money for your retirement.</div>
+		<div>Peter How
+</div>
+		<div>Reward and recognition >
+</div>
+		<div>years. I saw the job vacancy and as SGN have a good reputation I decided to apply. I thought it would be more engaging than the role I was in and so far I’ve been proved right.”
+
+She thinks that encouraging young girls to think about science, technology, engineering and mathematics (STEM) careers as early as possible would help. She said: “I think getting into schools would be very effective in encouraging girls from a young age. Our partnerships with Girlguiding and Solutions for the Planet are very valuable. It’s about making the industry less ‘scary’ and making girls aware of the roles that are there for them – it’s not just about digging holes.”
+
+After originally being interested in a career in Forensic Pathology as a girl, her confidence took a knock due to the attitudes of others. She added: “I was laughed at, which did impact my confidence initially. But I got over that, and there are more opportunities for young women today than ever before. Age or gender should never be a barrier."</div>
+		<div>Chris Holford
+</div>
+		<div>Career and development >
+</div>
+		<div>Culture
+</div>
+		<div>Mentoring
+</div>
+		<div>More4me is our lifestyle benefits hub offering hundreds of discounts and cashback offers on your shopping, holidays, health and utilities.
+
+Stuart Forrest, Network Planning Manager, uses more4me for a lot of his household purchases. “My wife tells me she uses it at least twice a week! Everything from general shopping to petrol.  We’ve also used it for cashback on ﬂights and hotels. And we saved £75 from a £180 AA membership last year. I’d say we’ve had around £2,300 in savings to day, which is great.”</div>
+		<div>More4me
+</div>
+		<div>For us engagement is about motivation, pride and commitment.</div>
+		<div>Sara Maitland
+Trainee Engineer in E&I (Electrical and Instrumentation), set her sights on a career in engineering from an early age. She said: “Ever since an electronics class at secondary school I’ve been interested in engineering. I</div>
+		<div>Our aim is to bring you a great range of benefits to suit your lifestyle.</div>
+		<div>Our people 
+are at the heart of
+our business.</div>
+		<div>Your health
+
+FirstAssist is available 24 hours for SGN employees to help with anything life throws at you including finances, nutrition, sleeping or quitting smoking.</div>
+		<div>Julie Greig
+Reinstatement Manager based at our Edinburgh depot, has only been with us for a short time, but has plenty of engineering experience. “I graduated in Civil Engineering and have worked in roads construction for 15</div>
+		<div>Cycle2work
+
+Is our tax and National Insurance free bike scheme to help promote healthier journeys to work and reduce pollution and congestion.</div>
+		<div>Your home
+
+We’ve got a range of benefits designed to save you money around the home – from a great discount on your energy bills through SSE to discounts on hiring tools and buying appliances.</div>
+		<div>Case study
+More4me</div>
+		<div>Your kids
+
+Employees are entitled to parental leave in addition to maternity or paternity leave. care-4 helps working parents to save on childcare costs for children up to the age of 16.</div>
+		<div>Our Aspiring team manager and network engineer programme runs alongside your normal day job and provides you with a structured mix of formal training, on-the-job training and experience, coaching, and possible academic study. Aspiring managers and engineering trainees are vital to the development of our business creating a group of people capable of stepping straight into future leadership opportunities.
+
+Chris Holford, Deputy Team Manager, began his career as a Poole depot GN01 before being promoted to Replacement Team Leader. Having recently completed the Aspiring Team Manager Programme, Chris is now a Repair Manager at Poole depot. Chris said: “The programme is great as it is structured to the individual’s specific needs. The programme has given me a great insight to the make-up and history of gas as a whole, and where it comes from. It has developed my understanding of the how SGN adheres to regulations, legislation, processes of safety to ensure the wellbeing of our staff, which is imperative when being a team manager.”</div>
+		<div>Southern mains replacement depots</div>
+		<div>What we do</div>
+		<div>Scotland operations depots</div>
+		<div>• 5.9 million customers
+
+• 960km of pipes upgraded
+
+• Reduced complaints by 38%
+
+• Volunteered 10,602 hours in
+   the community
+
+• Revamped customer
+   communications
+
+• 3,500 households
+   supported by Help to Heat
+
+• 25 new grads
+
+• 150 new apprentices
+
+• Supplying 133,000 homes
+   with green gas
+
+• CIRRIS robot making repairs
+   faster</div>
+		<div>Our services</div>
+		<div>Southern operations depots</div>
+		<div>KEEPING THE
+GAS FLOWING</div>
+		<div>Our vision
+Dedicated to keeping our customers safe and warm by leading the way in energy delivery
+
+Our commitment
+• We go out of our way to exceed customer
+   expectations
+• We're innovating for a safe, secure and
+   sustainable future for our network
+
+Involving you
+We engage with our stakeholders at the right time in the right way to help us deliver a better service
+
+Meeting expectations
+We meet our customers' expectations by exceeding our commitments under RII0
++ We meet our stakeholders’ expectations
+   by focusing on our 2016-17 priorities:
+
+• Keeping energy affordable
+• Improving our services
+• Keeping the gas flowing safely
+• Sustaining our future
+• Supporting our communities
+
+Fuelling GB long into the future
+Gas provides 80% of total UK energy demand at peak times and is the main energy source for 85% of UK households. The gas network’s versatility makes it ideal to support the transition to a low carbon economy. We’re introducing safe and reliable gas mixes including biomethane, hydrogren and synthetic gas, and SGN is investing in new technology and processes to make sure our network is fit for the future.
+</div>
+		<div>COMPANY STRATEGY</div>
+		<div>VIEW MAP</div>
+		<div>SGN at
+a glance
+</div>
+		<div>Where we operate >
+</div>
+		<div>
+            Upgrade
+
+We are committed to upgrading our network to ensure gas is a sustainable and green energy source for many years to come. We’re using the latest technology to minimise disruption as we replace, renew and maintain our pipes. By improving the gas network, we will continue to keep homes and businesses safe and warm long into the future.</div>
+		<div>Southern
+mains
+replacement
+depots</div>
+		<div>Our services >
+</div>
+		<div>Scotland
+operations
+depots</div>
+		<div>What we do >
+</div>
+		<div>
+            Emergency
+
+We provide the National Gas Emergency Service in Scotland and the south of England. Whenever a gas emergency is reported, our engineers will attend within an hour if you can’t turn off the supply at the meter or within two hours if you can turn off the emergency control valve and the smell of gas has gone. We’ll always make the situation safe whether the gas emergency is inside or outside your home.</div>
+		<div>SGN manage the network
+that distributes natural and green
+gas to 5.9 million homes and
+businesses across Scotland and the south of England.</div>
+		<div>
+            Connect
+
+Every year we connect around 20,000 new gas customers to our network. We also carry out service alterations for existing customers and disconnections when supplies are no longer required. We’re committed to keeping homes and businesses across our network safe and warm, and each year we help thousands of our most vulnerable customers heat their homes for less.</div>
+		<div>Southern
+operations
+depots</div>
+		<div>Where we operate</div>
+		<div>Our
+Services
+</div>
+		<div>We operate over 74,000km of gas mains and services in Scotland and the south of England.</div>
+
+	</div>
+
+	<!-- end text content: -->
+
+  </body>
+</html>
